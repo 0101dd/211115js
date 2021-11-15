@@ -57,7 +57,7 @@ bot.on('message', async (event) => {
     const { data } = await axios.get('https://api.holotools.app/v1/live')
     let i = 0
     for (i; i <= data.ended.length; i++) {
-      // const past = data.ended[i].status
+      // const live = data.live[i].status
       const type = event.message.text
       console.log(type)
       if (type === 'past') {
@@ -65,10 +65,14 @@ bot.on('message', async (event) => {
         if (result1.length >= 5) {
           break
         }
-      }
-      event.reply(result1)
+      } event.reply(result1)
     }
     console.log(result1)
+    if (result1.length > 0) {
+      // event.reply(result)
+    } else {
+      event.reply('找不到')
+    }
   } catch (error) {
     console.log(error)
     event.reply('error')
