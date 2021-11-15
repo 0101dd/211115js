@@ -50,31 +50,31 @@ bot.on('message', async (event) => {
 })
 
 // past
-bot.on('message', async (event) => {
-  // const text = event.message.text
-  try {
-    const result = []
-    const { data } = await axios.get('https://api.holotools.app/v1/live')
-    let i = 0
-    for (i; i <= data.ended.length; i++) {
-      // const past = data.ended[i].status
-      const type = event.message.text
-      console.log(type)
-      if (type === 'past') {
-        result.push('https://www.youtube.com/watch?v=' + data.ended[i].yt_video_key)
-        if (result.length >= 5) {
-          break
-        }
-      } event.reply(result)
-    }
-    console.log(result)
-    if (result.length > 0) {
-      // event.reply(result)
-    } else {
-      event.reply('找不到')
-    }
-  } catch (error) {
-    console.log(error)
-    event.reply('error')
-  }
-})
+// bot.on('message', async (event) => {
+//   // const text = event.message.text
+//   try {
+//     const result = []
+//     const { data } = await axios.get('https://api.holotools.app/v1/live')
+//     let i = 0
+//     for (i; i <= data.ended.length; i++) {
+//       // const past = data.ended[i].status
+//       const type = event.message.text
+//       console.log(type)
+//       if (type === 'past') {
+//         result.push('https://www.youtube.com/watch?v=' + data.ended[i].yt_video_key)
+//         if (result.length >= 5) {
+//           break
+//         }
+//       } event.reply(result)
+//     }
+//     console.log(result)
+//     if (result.length > 0) {
+//       // event.reply(result)
+//     } else {
+//       event.reply('找不到')
+//     }
+//   } catch (error) {
+//     console.log(error)
+//     event.reply('error')
+//   }
+// })
