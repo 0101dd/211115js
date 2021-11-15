@@ -111,18 +111,16 @@ bot.on('message', async (event3) => {
       const name = event3.message.text.replace('!name ', '')
       try {
         const { data } = await axios.get('https://api.holotools.app/v1/live')
+        const status = data.live.status
         let i = 0
-        for (i; i <= data.live.length; i++) {
+        for (i; i < data.live.length; i++) {
           const str = data.live[i].channel.name
           // const type = event3.message.text
           console.log('1: ' + name)
-          if (str.includes(name)) {
+          if (status === 'live' || str.includes(name)) {
             console.log(str.includes(name))
             console.log(data.live[i].title)
             event3.reply(data.live[i].title)
-          } else {
-            console.log('no')
-            event3.reply('no data')
           }
         }
       } catch (error) {
