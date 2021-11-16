@@ -24,7 +24,7 @@ bot.on('message', async (event) => {
       const ing = event.message.text.replace('!live')
       try {
         const result = []
-        const { data } = await axios.get('https://api.holotools.app/v1/live')
+        const { data } = await axios.post('https://api.holotools.app/v1/live')
         let i = 0
         for (i; i <= data.live.length; i++) {
           console.log(ing)
@@ -55,7 +55,7 @@ bot.on('message', async (event1) => {
       const ed = event1.message.text.replace('!past')
       try {
         const result1 = []
-        const { data } = await axios.get('https://api.holotools.app/v1/live')
+        const { data } = await axios.post('https://api.holotools.app/v1/live')
         let i = 0
         for (i; i <= data.ended.length; i++) {
           console.log(ed)
@@ -106,7 +106,7 @@ bot.on('message', async (event3) => {
     if (event3.message.text.startsWith('!name ')) {
       const name = event3.message.text.replace('!name ', '')
       try {
-        const { data } = await axios.get('https://api.holotools.app/v1/live')
+        const { data } = await axios.post('https://api.holotools.app/v1/live')
         const status = data.live.status
         let i = 0
         for (i; i < data.live.length; i++) {
@@ -133,7 +133,7 @@ bot.on('message', async (event4) => {
       const up = event4.message.text.replace('!upcoming')
       try {
         const result2 = []
-        const { data } = await axios.get('https://api.holotools.app/v1/live')
+        const { data } = await axios.post('https://api.holotools.app/v1/live')
         let i = 0
         for (i; i <= data.upcoming.length; i++) {
           console.log(up)
@@ -163,7 +163,7 @@ bot.on('message', async (event5) => {
     if (event5.message.text.startsWith('!viewer')) {
       const view = event5.message.text.replace('!viewer', '')
       try {
-        const { data } = await axios.get('https://api.holotools.app/v1/live')
+        const { data } = await axios.post('https://api.holotools.app/v1/live')
         let i = 0
         for (i; i <= data.live.length; i++) {
           const str = data.live[i].channel.name
