@@ -172,7 +172,7 @@ bot.on('message', async (event5) => {
           if (str.includes(view)) {
             console.log(str.includes(view))
             console.log(data.live[i].live_viewers)
-            event5.reply(data.live[i].live_viewers)
+            event5.reply(String(data.live[i].live_viewers))
           } else {
             console.log('no')
             event5.reply('no data')
