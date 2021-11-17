@@ -169,7 +169,8 @@ bot.on('message', async (event5) => {
           const channel = data.live[i].channel
           const str = channel.name
           const status = data.live.status
-          console.log('1: ' + view)
+          console.log('1:' + view)
+          console.log('2:' + str)
           if (status === 'live' || str.includes(view)) {
             console.log(str.includes(view))
             console.log(data.live[i].live_viewers)
@@ -178,6 +179,7 @@ bot.on('message', async (event5) => {
         }
       } catch (error) {
         console.log(error)
+        event5.reply('error')
       }
     }
   }
