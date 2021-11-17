@@ -166,7 +166,8 @@ bot.on('message', async (event5) => {
         const { data } = await axios.get('https://api.holotools.app/v1/live')
         let i = 0
         for (i; i <= data.live.length; i++) {
-          const str = data.live[i].channel.name
+          const channel = data.live[i].channel
+          const str = channel.name
           const status = data.live.status
           console.log('1: ' + view)
           if (status === 'live' || str.includes(view)) {
