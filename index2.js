@@ -11,15 +11,11 @@ const bot = linebot({
 bot.listen('/', process.env.PORT || 3000, () => {
   console.log('機器人啟動')
 })
-
-bot.on('message', async (event) => {
-  try {
-    event.reply(event.message.text)
-    console.log(event.message.text)
-  } catch (error) {
-    console.log(error)
-  }
-})
+// bot.on('message', async (event) => {
+//   const txt = event.message.text
+//   console.log(txt)
+//   event.reply(txt)
+// })
 
 // 輸入!live回傳正在直播的影片網址
 bot.on('message', async (event) => {
