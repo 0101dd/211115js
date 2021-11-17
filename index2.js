@@ -167,8 +167,9 @@ bot.on('message', async (event5) => {
         let i = 0
         for (i; i <= data.live.length; i++) {
           const str = data.live[i].channel.name
+          const status = data.live.status
           console.log('1: ' + view)
-          if (str.includes(view)) {
+          if (status === 'live' || str.includes(view)) {
             console.log(str.includes(view))
             console.log(data.live[i].live_viewers)
             event5.reply('同接人數： ' + String(data.live[i].live_viewers))
