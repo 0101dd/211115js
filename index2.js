@@ -171,15 +171,11 @@ bot.on('message', async (event5) => {
         let i = 0
         for (i; i <= data.live.length; i++) {
           const str = data.live[i].channel.name
-          // const type = event3.message.text
           console.log('1: ' + view)
           if (str.includes(view)) {
             console.log(str.includes(view))
             console.log(data.live[i].live_viewers)
-            event5.reply(data.live[i].live_viewers)
-          } else {
-            console.log('no')
-            event5.reply('no data')
+            event5.reply('同接人數： ' + String(data.live[i].live_viewers))
           }
         }
       } catch (error) {
