@@ -1,22 +1,16 @@
 {
   "type": "module",
-  "name": "211115js",
+  "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "index2.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon index2.js",
-    "start": "node index2.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^0.24.0",
-    "cheerio": "^1.0.0-rc.10",
-    "dotenv": "^10.0.0",
-    "linebot": "^1.6.1"
-  },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
@@ -24,5 +18,10 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "linebot": "^1.6.1"
   }
 }

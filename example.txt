@@ -1,0 +1,241 @@
+ type: 'flex',
+  altText: 'Hakos Baelz',
+  contents: {
+    type: 'bubble',
+    hero: {
+      type: 'image',
+      url: 'https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1000,w_500,f_auto,q_auto/1369026/641506_266480.png',
+      size: 'full',
+      aspectRatio: '20:13',
+      aspectMode: 'cover',
+      action: {
+        type: 'uri',
+        uri: 'http://linecorp.com/'
+      }
+    },
+    body: {
+      type: 'box',
+      layout: 'vertical',
+      contents: [
+        {
+          type: 'text',
+          text: 'Hakos Baelz',
+          weight: 'bold',
+          size: 'xl',
+          align: 'center'
+        },
+        {
+          type: 'box',
+          layout: 'vertical',
+          margin: 'lg',
+          spacing: 'sm',
+          contents: [
+            {
+              type: 'box',
+              layout: 'baseline',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'text',
+                  text: 'A member of the Council and the very concept of Chaos, birthed by the world, itself.',
+                  wrap: true,
+                  color: '#666666',
+                  size: 'sm',
+                  align: 'center',
+                  flex: 5
+                }
+              ]
+            },
+            {
+              type: 'button',
+              action: {
+                type: 'uri',
+                label: 'more information',
+                uri: 'https://en.hololive.tv/portfolio/items/hakos-baelz'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    footer: {
+      type: 'box',
+      layout: 'horizontal',
+      spacing: 'sm',
+      contents: [
+        {
+          type: 'button',
+          style: 'link',
+          height: 'sm',
+          action: {
+            type: 'uri',
+            label: 'Twitter',
+            uri: 'https://twitter.com/hakosbaelz'
+          }
+        },
+        {
+          type: 'button',
+          style: 'link',
+          height: 'sm',
+          action: {
+            type: 'uri',
+            label: 'YouTube',
+            uri: 'https://www.youtube.com/channel/UCgmPnx-EEeOrZSg5Tiw7ZRQ'
+          }
+        },
+        {
+          type: 'spacer',
+          size: 'sm'
+        }
+      ],
+      flex: 0
+    }
+  }
+
+  export const sora = {
+  type: 'flex',
+  altText: 'Tokino Sora',
+  contents: {
+    type: 'bubble',
+    hero: {
+      type: 'image',
+      url: 'https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1000,w_500,f_auto,q_auto/1369026/766395_704791.png',
+      size: 'full',
+      aspectRatio: '20:13',
+      aspectMode: 'cover',
+      action: {
+        type: 'uri',
+        uri: 'http://linecorp.com/'
+      }
+    },
+    body: {
+      type: 'box',
+      layout: 'vertical',
+      contents: [
+        {
+          type: 'text',
+          text: 'Ouro Kronii',
+          weight: 'bold',
+          size: 'xl',
+          align: 'center'
+        },
+        {
+          type: 'box',
+          layout: 'vertical',
+          margin: 'lg',
+          spacing: 'sm',
+          contents: [
+            {
+              type: 'box',
+              layout: 'baseline',
+              spacing: 'sm',
+              contents: [
+                {
+                  type: 'text',
+                  text: 'A member of the Council and the Warden of "Time," the third concept birthed by the Gods and the one most intrinsically linked with mankind.',
+                  wrap: true,
+                  color: '#666666',
+                  size: 'sm',
+                  align: 'center',
+                  flex: 5
+                }
+              ]
+            },
+            {
+              type: 'button',
+              action: {
+                type: 'uri',
+                label: 'more information',
+                uri: 'https://en.hololive.tv/portfolio/items/ouro-kronii'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    footer: {
+      type: 'box',
+      layout: 'horizontal',
+      spacing: 'sm',
+      contents: [
+        {
+          type: 'button',
+          style: 'link',
+          height: 'sm',
+          action: {
+            type: 'uri',
+            label: 'Twitter',
+            uri: 'https://twitter.com/ourokronii'
+          }
+        },
+        {
+          type: 'button',
+          style: 'link',
+          height: 'sm',
+          action: {
+            type: 'uri',
+            label: 'YouTube',
+            uri: 'https://www.youtube.com/channel/UCmbs8T6MWqUHP1tIQvSgKrg'
+          }
+        },
+        {
+          type: 'spacer',
+          size: 'sm'
+        }
+      ],
+      flex: 0
+    }
+  }
+}
+export const azki = {}
+export const robocosan = {}
+export const miko = {}
+export const fubuki = {}
+export const matsuri = {}
+export const choco = {}
+export const ayame = {}
+export const shion = {}
+export const subaru = {}
+export const mio = {}
+export const okayu = {}
+export const korone = {}
+export const flare = {}
+export const noel = {}
+export const marine = {}
+export const pekora = {}
+export const rushia = {}
+export const suisei = {}
+export const kanata = {}
+export const coco = {}
+export const watame = {}
+export const towa = {}
+export const luna = {}
+export const lamy = {}
+export const nene = {}
+export const botan = {}
+export const polka = {}
+export const risu = {}
+export const moona = {}
+export const iofi = {}
+export const ollie = {}
+export const anya = {}
+export const reine = {}
+export const mori = {}
+export const kiara = {}
+export const ina = {}
+export const gura = {}
+export const amelia = {}
+export const irys = {}
+export const sana = {}
+export const fauna = {}
+
+flex.altText = 'Nanashi Mumei'
+  flex.contents.hero.url = 'https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1000,w_500,f_auto,q_auto/1369026/441493_593755.png'
+  flex.contents.body.contents[0].text = 'Nanashi Mumei'
+  flex.contents.body.contents[1].contents[0].contents[0].text = 'A member of the Council and the Guardian of "Civilization," a concept crafted by mankind.'
+  // official
+  flex.contents.body.contents[1].contents[1].action.uri = 'https://en.hololive.tv/portfolio/items/nanashi-mumei'
+  // twitter
+  flex.contents.footer.contents[0].action.uri = 'https://twitter.com/nanashimumei_en'
+  // youtube
+  flex.contents.footer.contents[1].action.uri = 'https://www.youtube.com/channel/UC3n5uGu18FoCy23ggWWp8tA'
