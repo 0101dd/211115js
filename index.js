@@ -77,7 +77,6 @@ bot.on('message', async (event) => {
       try {
         const result = []
         const { data } = await axios.get('https://api.holotools.app/v1/live')
-        // let i = 0
         for (const live of data.live) {
           result.push('https://www.youtube.com/watch?v=' + live.yt_video_key)
           if (result.length >= 5) {
@@ -152,7 +151,7 @@ bot.on('message', async (event3) => {
   }
 })
 
-// 輸入！upcoming回傳即將直播的影片網址(不包含free chat)
+// 輸入！upcoming回傳即將直播的影片網址
 bot.on('message', async (event4) => {
   if (event4.message.type === 'text') {
     if (event4.message.text.startsWith('!upcoming')) {
