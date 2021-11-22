@@ -30,16 +30,16 @@ export const b = async (event) => {
 }
 // roboco
 export const c = async (event) => {
-  flex.altText = 'Nanashi Mumei'
+  flex.altText = 'Robocosan'
   flex.contents.hero.url = 'https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1000,w_500,f_auto,q_auto/1369026/133704_17353.png'
-  flex.contents.body.contents[0].text = 'Nanashi Mumei'
-  flex.contents.body.contents[1].contents[0].contents[0].text = 'A member of the Council and the Guardian of "Civilization," a concept crafted by mankind.'
+  flex.contents.body.contents[0].text = 'Robocosan'
+  flex.contents.body.contents[1].contents[0].contents[0].text = 'A lonely, wimpy robot from a random wasteland.She is now hoping to contact and live with lots of people as a Virtual Liver.'
   // official
-  flex.contents.body.contents[1].contents[1].action.uri = 'https://en.hololive.tv/portfolio/items/nanashi-mumei'
+  flex.contents.body.contents[1].contents[1].action.uri = 'https://en.hololive.tv/portfolio/items/robocosan'
   // twitter
-  flex.contents.footer.contents[0].action.uri = 'https://twitter.com/nanashimumei_en'
+  flex.contents.footer.contents[0].action.uri = 'https://twitter.com/robocosan'
   // youtube
-  flex.contents.footer.contents[1].action.uri = 'https://www.youtube.com/channel/UC3n5uGu18FoCy23ggWWp8tA'
+  flex.contents.footer.contents[1].action.uri = 'https://www.youtube.com/channel/UCDqI2jOz0weumE8s7paEk6g'
   event.reply(flex)
 }
 // miko
