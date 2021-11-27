@@ -134,8 +134,9 @@ bot.on('message', async (event1) => {
         }
 
         const result3 = []
-        for (let i = 0; i <= data.ended.length; i++) {
-          const num = random(0, data.ended.length)
+        const past = data.ended
+        for (let i = 0; i < past.length; i++) {
+          const num = random(0, past.length)
           if (result3.includes(num)) {
             i--
           } else {
@@ -144,7 +145,7 @@ bot.on('message', async (event1) => {
               break
             }
             console.log(num)
-            result.push('https://www.youtube.com/watch?v=' + data.ended[num].yt_video_key)
+            result.push('https://www.youtube.com/watch?v=' + past[num].yt_video_key)
             if (result.length >= 5) {
               break
             }
