@@ -77,16 +77,39 @@ bot.on('message', async (event) => {
       try {
         const result = []
         const { data } = await axios.get('https://api.holotools.app/v1/live')
-        for (const live of data.live) {
-          result.push('https://www.youtube.com/watch?v=' + live.yt_video_key)
-          if (result.length >= 5) {
-            break
+        // ---------------------------------------------
+        const random = (min, max) => {
+          return Math.round(Math.random() * (max - min)) + min
+        }
+
+        const result3 = []
+        for (let i = 0; i < data.live.length; i++) {
+          const num = random(0, data.live.length)
+          if (result3.includes(num)) {
+            i--
+          } else {
+            result3.push(num)
+            if (result3.length >= 6) {
+              break
+            }
+            console.log(num)
+            result.push('https://www.youtube.com/watch?v=' + data.live[num].yt_video_key)
+            if (result.length >= 5) {
+              break
+            }
           }
         }
-        console.log(result)
-        event.reply(result)
+        // ---------------------------------------------
+        // for (const live of data.live) {
+        //   result.push('https://www.youtube.com/watch?v=' + live.yt_video_key)
+        //   if (result.length >= 5) {
+        //     break
+        //   }
+        // }
+        // console.log(result)
+        // event.reply(result)
         if (result.length > 0) {
-          // event.reply(result)
+          event.reply(result)
         } else {
           event.reply('沒有人直播中')
         }
@@ -106,12 +129,33 @@ bot.on('message', async (event1) => {
         const result = []
         const { data } = await axios.get('https://api.holotools.app/v1/live')
         // let i = 0
-        for (const ended of data.ended) {
-          result.push('https://www.youtube.com/watch?v=' + ended.yt_video_key)
-          if (result.length >= 5) {
-            break
+        const random = (min, max) => {
+          return Math.round(Math.random() * (max - min)) + min
+        }
+
+        const result3 = []
+        for (let i = 0; i <= data.ended.length; i++) {
+          const num = random(0, data.ended.length)
+          if (result3.includes(num)) {
+            i--
+          } else {
+            result3.push(num)
+            if (result3.length >= 6) {
+              break
+            }
+            console.log(num)
+            result.push('https://www.youtube.com/watch?v=' + data.ended[num].yt_video_key)
+            if (result.length >= 5) {
+              break
+            }
           }
         }
+        // for (const ended of data.ended) {
+        //   result.push('https://www.youtube.com/watch?v=' + ended.yt_video_key)
+        //   if (result.length >= 5) {
+        //     break
+        //   }
+        // }
         event1.reply(result)
         console.log(result)
         if (result.length > 0) {
