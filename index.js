@@ -156,10 +156,10 @@ bot.on('message', async (event1) => {
         //     break
         //   }
         // }
-        event1.reply(result)
+        // event1.reply(result)
         console.log(result)
         if (result.length > 0) {
-          // event.reply(result)
+          event1.reply(result)
         } else {
           event1.reply('沒有過去的直播')
         }
