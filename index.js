@@ -156,22 +156,35 @@ bot.on('message', async (event4) => {
   if (event4.message.type === 'text') {
     if (event4.message.text.startsWith('!upcoming')) {
       try {
-        const result = []
+        const result0 = []
         const { data } = await axios.get('https://api.holotools.app/v1/live')
-        // }
-        for (const test of data.upcoming) {
-          data.upcoming.splice(test.title.includes('Free'), 1)
+        const result = data.upcoming.filter(obj => obj.title.includes('Free') === false)
+        const result1 = result.filter(obj => obj.title.includes('FREE') === false)
+        const result2 = result1.filter(obj => obj.title.includes('SCHEDULE') === false)
+        // console.log(result2)
+        const random = (min, max) => {
+          return Math.round(Math.random() * (max - min)) + min
         }
-        for (const upcoming of data.upcoming) {
-          result.push('https://www.youtube.com/watch?v=' + upcoming.yt_video_key)
-          if (result.length >= 5) {
-            break
+
+        const result3 = []
+        for (let i = 0; i < result2.length; i++) {
+          const num = random(0, result2.length)
+          if (result3.includes(num)) {
+            i--
+          } else {
+            result3.push(num)
+            if (result3.length >= 6) {
+              break
+            }
+            console.log(num)
+            result0.push('https://www.youtube.com/watch?v=' + result2[num].yt_video_key)
+            if (result0.length >= 5) {
+              break
+            }
           }
         }
-        event4.reply(result)
-        console.log(result)
-        if (result.length > 0) {
-          // event.reply(result)
+        if (result0.length > 0) {
+          event4.reply(result0)
         } else {
           event4.reply('找不到')
         }
