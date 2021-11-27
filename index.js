@@ -93,7 +93,7 @@ bot.on('message', async (event) => {
               break
             }
             console.log(num)
-            result.push('https://www.youtube.com/watch?v=' + data.live[num].yt_video_key)
+            result.push('👉 ' + data.live[num].channel.name + '\nhttps://www.youtube.com/watch?v=' + data.live[num].yt_video_key)
             if (result.length >= 5) {
               break
             }
@@ -134,9 +134,8 @@ bot.on('message', async (event1) => {
         }
 
         const result3 = []
-        const past = data.ended
-        for (let i = 0; i < past.length; i++) {
-          const num = random(0, past.length)
+        for (let i = 0; i <= data.ended.length; i++) {
+          const num = random(0, data.ended.length)
           if (result3.includes(num)) {
             i--
           } else {
@@ -145,7 +144,7 @@ bot.on('message', async (event1) => {
               break
             }
             console.log(num)
-            result.push('https://www.youtube.com/watch?v=' + past[num].yt_video_key)
+            result.push('👉 ' + data.ended[num].channel.name + '\nhttps://www.youtube.com/watch?v=' + data.ended[num].yt_video_key)
             if (result.length >= 5) {
               break
             }
@@ -157,10 +156,10 @@ bot.on('message', async (event1) => {
         //     break
         //   }
         // }
-        // event1.reply(result)
+        event1.reply(result)
         console.log(result)
         if (result.length > 0) {
-          event1.reply(result)
+          // event.reply(result)
         } else {
           event1.reply('沒有過去的直播')
         }
@@ -186,7 +185,14 @@ bot.on('message', async (event3) => {
           if (str.includes(title)) {
             console.log(str.includes(title))
             console.log(data.live[i].title)
-            event3.reply('👉  ' + data.live[i].title + '\n👉  同接人數： ' + String(data.live[i].live_viewers))
+            const date = new Date(data.live[i].live_schedule)
+            if (date.getMinutes() === 0) {
+              const date1 = date.getMinutes() + '0'
+              event3.reply('👉  ' + data.live[i].title + '\n👉  直播時間： ' + date.getHours() + ':' + date1 + '\n👉  同接人數： ' + String(data.live[i].live_viewers))
+            } else if (date.getMinutes() < 10 && date.getMinutes() > 0) {
+              const date1 = '0' + date.getMinutes()
+              event3.reply('👉  ' + data.live[i].title + '\n👉  直播時間： ' + date.getHours() + ':' + date1 + '\n👉  同接人數： ' + String(data.live[i].live_viewers) + '\n👉  訂閱人數： ' + String(data.live[i].channel.subscriber_count))
+            }
           }
         }
       } catch (error) {
@@ -196,7 +202,7 @@ bot.on('message', async (event3) => {
   }
 })
 
-// 輸入！upcoming回傳即將直播的影片網址
+// 輸入！upcoming回傳即將直播的影片網址(不包含free chat)
 bot.on('message', async (event4) => {
   if (event4.message.type === 'text') {
     if (event4.message.text.startsWith('!upcoming')) {
@@ -222,7 +228,16 @@ bot.on('message', async (event4) => {
               break
             }
             console.log(num)
-            result0.push('https://www.youtube.com/watch?v=' + result2[num].yt_video_key)
+            const date = new Date(result2[num].live_schedule)
+            if (date.getMinutes() === 0) {
+              const date1 = date.getMinutes() + '0'
+              const month = date.getMonth() + 1
+              result0.push('👉 ' + result2[num].channel.name + '\n👉 直播時間：' + month + '/' + date.getDate() + ' ' + date.getHours() + ':' + date1 + '\nhttps://www.youtube.com/watch?v=' + result2[num].yt_video_key)
+            } else {
+              const date1 = date.getMinutes()
+              const month = date.getMonth() + 1
+              result0.push('👉 ' + result2[num].channel.name + '\n👉 直播時間：' + month + '/' + date.getDate() + ' ' + date.getHours() + ':' + date1 + '\nhttps://www.youtube.com/watch?v=' + result2[num].yt_video_key)
+            }
             if (result0.length >= 5) {
               break
             }
