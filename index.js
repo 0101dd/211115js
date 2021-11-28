@@ -186,7 +186,7 @@ bot.on('message', async (event3) => {
             const date = new Date(data.live[i].live_schedule)
             // if (date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) === 0) {
             // const date1 = date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '0'
-            event3.reply('👉  ' + data.live[i].title + '\n👉  直播時間： ' + '\n' + date.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '\n👉  同接人數： ' + String(data.live[i].live_viewers))
+            event3.reply('👉  ' + data.live[i].title + '\n👉 ' + date.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '\n👉  同接人數： ' + String(data.live[i].live_viewers))
             // } else if (date.getMinutes() < 10 && date.getMinutes() > 0) {
             //   const date1 = '0' + date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' })
             //   event3.reply('👉  ' + data.live[i].title + '\n👉  直播時間： ' + date.getHours().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + ':' + date1 + '\n👉  同接人數： ' + String(data.live[i].live_viewers) + '\n👉  訂閱人數： ' + String(data.live[i].channel.subscriber_count))
@@ -230,7 +230,7 @@ bot.on('message', async (event4) => {
             // if (date.getMinutes() === 0) {
             // const date1 = date.getMinutes() + '0'
             // const month = date + 1
-            result0.push('👉 ' + result2[num].channel.name + '\n👉 直播時間：' + '\n' + date.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '\nhttps://www.youtube.com/watch?v=' + result2[num].yt_video_key)
+            result0.push('👉 ' + result2[num].channel.name + '\n👉 ' + date.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '\nhttps://www.youtube.com/watch?v=' + result2[num].yt_video_key)
             // } else {
             //   // const date1 = date.getMinutes() + '0'
             //   // const month = date + 1
