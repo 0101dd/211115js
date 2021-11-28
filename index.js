@@ -186,7 +186,7 @@ bot.on('message', async (event3) => {
             const date = new Date(data.live[i].live_schedule)
             // if (date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) === 0) {
             // const date1 = date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '0'
-            event3.reply('👉  ' + data.live[i].title + '\n👉  直播時間： ' + date.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }, { hour12: false }) + '\n👉  同接人數： ' + String(data.live[i].live_viewers))
+            event3.reply('👉  ' + data.live[i].title + '\n👉  直播時間： ' + date.toLocaleString('zh-TW', { hour12: false }) + '\n👉  同接人數： ' + String(data.live[i].live_viewers))
             // } else if (date.getMinutes() < 10 && date.getMinutes() > 0) {
             //   const date1 = '0' + date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' })
             //   event3.reply('👉  ' + data.live[i].title + '\n👉  直播時間： ' + date.getHours().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + ':' + date1 + '\n👉  同接人數： ' + String(data.live[i].live_viewers) + '\n👉  訂閱人數： ' + String(data.live[i].channel.subscriber_count))
