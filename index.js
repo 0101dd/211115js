@@ -227,15 +227,15 @@ bot.on('message', async (event4) => {
             }
             console.log(num)
             const date = new Date(result2[num].live_schedule)
-            if (date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) === 0) {
-              const date1 = date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '0'
-              const month = date.getMonth().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + 1
-              result0.push('👉 ' + result2[num].channel.name + '\n👉 直播時間：' + month + '/' + date.getDate().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + ' ' + date.getHours().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + ':' + date1 + '\nhttps://www.youtube.com/watch?v=' + result2[num].yt_video_key)
-            } else {
-              const date1 = date.getMinutes()
-              const month = date.getMonth() + 1
-              result0.push('👉 ' + result2[num].channel.name + '\n👉 直播時間：' + month + '/' + date.getDate().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + ' ' + date.getHours().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + ':' + date1 + '\nhttps://www.youtube.com/watch?v=' + result2[num].yt_video_key)
-            }
+            // if (date.getMinutes() === 0) {
+            // const date1 = date.getMinutes() + '0'
+            // const month = date + 1
+            result0.push('👉 ' + result2[num].channel.name + '\n👉 直播時間：' + date.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '\nhttps://www.youtube.com/watch?v=' + result2[num].yt_video_key)
+            // } else {
+            //   // const date1 = date.getMinutes() + '0'
+            //   // const month = date + 1
+            //   result0.push('👉 ' + result2[num].channel.name + '\n👉 直播時間：' + date.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '\nhttps://www.youtube.com/watch?v=' + result2[num].yt_video_key)
+            // }
             if (result0.length >= 5) {
               break
             }
