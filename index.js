@@ -84,7 +84,7 @@ bot.on('message', async (event) => {
 
         const result3 = []
         for (let i = 0; i < data.live.length; i++) {
-          const num = random(0, data.live.length)
+          const num = random(0, data.live.length - 1)
           if (result3.includes(num)) {
             i--
           } else {
@@ -128,14 +128,14 @@ bot.on('message', async (event1) => {
       try {
         const result = []
         const { data } = await axios.get('https://api.holotools.app/v1/live')
-        // let i = 0
+        // ---------------------------------------------
         const random = (min, max) => {
           return Math.round(Math.random() * (max - min)) + min
         }
 
         const result3 = []
-        for (let i = 0; i <= data.ended.length; i++) {
-          const num = random(0, data.ended.length)
+        for (let i = 0; i < data.ended.length; i++) {
+          const num = random(0, data.ended.length - 1)
           if (result3.includes(num)) {
             i--
           } else {
@@ -156,10 +156,8 @@ bot.on('message', async (event1) => {
         //     break
         //   }
         // }
-        event1.reply(result)
-        console.log(result)
         if (result.length > 0) {
-          // event.reply(result)
+          event1.reply(result)
         } else {
           event1.reply('沒有過去的直播')
         }
