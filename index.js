@@ -183,7 +183,7 @@ bot.on('message', async (event3) => {
           if (str.includes(title)) {
             console.log(str.includes(title))
             console.log(data.live[i].title)
-            const date = new Date(result2[num].live_schedule)
+            const date = new Date(data.live[i].live_schedule)
             if (date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) === 0) {
               const date1 = date.getMinutes().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + '0'
               event3.reply('👉  ' + data.live[i].title + '\n👉  直播時間： ' + date.getHours().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) + ':' + date1 + '\n👉  同接人數： ' + String(data.live[i].live_viewers))
