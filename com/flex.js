@@ -673,3 +673,78 @@ export const aw = async (event) => {
   flex.contents.footer.contents[1].action.uri = 'https://www.youtube.com/channel/UCgmPnx-EEeOrZSg5Tiw7ZRQ'
   event.reply(flex)
 }
+
+// la+
+export const ax = async (event) => {
+  flex.altText = 'La+ Darknesss'
+  flex.contents.hero.url = 'https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_3000,w_2000,f_auto,q_auto/1369026/732970_747870.png'
+  flex.contents.body.contents[0].text = 'La+ Darknesss'
+  flex.contents.body.contents[1].contents[0].contents[0].text = 'The one who established Secret Society holoX.She was originally known for her vast power and intelligence, but most of it is now sealed away.'
+  // official
+  flex.contents.body.contents[1].contents[1].action.uri = 'https://en.hololive.tv/portfolio/items/la-darknesss'
+  // twitter
+  flex.contents.footer.contents[0].action.uri = 'https://twitter.com/LaplusDarknesss'
+  // youtube
+  flex.contents.footer.contents[1].action.uri = 'https://www.youtube.com/channel/UCENwRMx5Yh42zWpzURebzTw'
+  event.reply(flex)
+}
+
+// Takane Lui
+export const ay = async (event) => {
+  flex.altText = 'Takane Lui'
+  flex.contents.hero.url = 'https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_3000,w_2000,f_auto,q_auto/1369026/645209_370930.png'
+  flex.contents.body.contents[0].text = 'Takane Lui'
+  flex.contents.body.contents[1].contents[0].contents[0].text = 'The executive officer of Secret Society holoX.As holoX\'s point of contact and the one in charge of external affairs, she is the de facto leader of the group, handling matters that the founder cannot.'
+  // official
+  flex.contents.body.contents[1].contents[1].action.uri = 'https://en.hololive.tv/portfolio/items/takane-lui'
+  // twitter
+  flex.contents.footer.contents[0].action.uri = 'https://twitter.com/takanelui'
+  // youtube
+  flex.contents.footer.contents[1].action.uri = 'https://www.youtube.com/channel/UCs9_O1tRPMQTHQ-N_L6FU2g'
+  event.reply(flex)
+}
+
+// Hakui Koyori
+export const az = async (event) => {
+  flex.altText = 'Hakui Koyori'
+  flex.contents.hero.url = 'https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_3000,w_2000,f_auto,q_auto/1369026/798164_768923.png'
+  flex.contents.body.contents[0].text = 'Hakui Koyori'
+  flex.contents.body.contents[1].contents[0].contents[0].text = 'The one in charge of R&D in Secret Society holoX. As part of her studies into human behavior, she meddles in the other members\' affairs and tries to help them out at every turn.'
+  // official
+  flex.contents.body.contents[1].contents[1].action.uri = 'https://en.hololive.tv/portfolio/items/hakui-koyori'
+  // twitter
+  flex.contents.footer.contents[0].action.uri = 'https://twitter.com/hakuikoyori'
+  // youtube
+  flex.contents.footer.contents[1].action.uri = 'https://www.youtube.com/channel/UC6eWCld0KwmyHFbAqK3V-Rw'
+  event.reply(flex)
+}
+
+// Sakamata Chloe
+export const ba = async (event) => {
+  flex.altText = 'Sakamata Chloe'
+  flex.contents.hero.url = 'https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_3000,w_2000,f_auto,q_auto/1369026/249155_807922.png'
+  flex.contents.body.contents[0].text = 'Sakamata Chloe'
+  flex.contents.body.contents[1].contents[0].contents[0].text = 'An intern who acts as a fixer and cleaner for Secret Society holoX. Calm and composed at all times, she carries out her orders without so much as batting an eyelid.'
+  // official
+  flex.contents.body.contents[1].contents[1].action.uri = 'https://en.hololive.tv/portfolio/items/sakamata-chloe'
+  // twitter
+  flex.contents.footer.contents[0].action.uri = 'https://twitter.com/sakamatachloe'
+  // youtube
+  flex.contents.footer.contents[1].action.uri = 'https://www.youtube.com/channel/UCIBY1ollUsauvVi4hW4cumw'
+  event.reply(flex)
+}
+
+// Kazama Iroha
+export const bb = async (event) => {
+  flex.altText = 'Kazama Iroha'
+  flex.contents.hero.url = 'https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_3000,w_2000,f_auto,q_auto/1369026/411771_432921.png'
+  flex.contents.body.contents[0].text = 'Kazama Iroha'
+  flex.contents.body.contents[1].contents[0].contents[0].text = 'Secret Society holoX\'s insurance policy. Hailing from a remote mountainous area, she left her home behind and, along with her companion, set off on a journey to achieve her dream of seeing and learning more about the outside world.'
+  // official
+  flex.contents.body.contents[1].contents[1].action.uri = 'https://en.hololive.tv/portfolio/items/kazama-iroha'
+  // twitter
+  flex.contents.footer.contents[0].action.uri = 'https://twitter.com/kazamairohach'
+  // youtube
+  flex.contents.footer.contents[1].action.uri = 'https://www.youtube.com/channel/UC_vMYWcDjmfdpH6r4TTn1MQ'
+  event.reply(flex)
+}

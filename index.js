@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import linebot from 'linebot'
 import axios from 'axios'
-import { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, aa, ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, ap, aq, ar, as, at, au, av, aw } from './com/flex.js'
+import { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, aa, ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, ap, aq, ar, as, at, au, av, aw, ax, ay, az, ba, bb } from './com/flex.js'
 import intro from './tem/intro_flex.js'
 
 const bot = linebot({
@@ -67,6 +67,11 @@ bot.on('message', async (event0) => {
     if (text.startsWith('Ouro') || text.startsWith('Kronii')) au(event0)
     if (text.startsWith('Nanashi') || text.startsWith('Mumei')) av(event0)
     if (text.startsWith('Hakos') || text.startsWith('Bae')) aw(event0)
+    if (text.startsWith('La+') || text.startsWith('Darknesss')) ax(event0)
+    if (text.startsWith('Takane') || text.startsWith('Lui')) ay(event0)
+    if (text.startsWith('Hakui') || text.startsWith('Koyori')) az(event0)
+    if (text.startsWith('Sakamata') || text.startsWith('Chloe')) ba(event0)
+    if (text.startsWith('Kazama') || text.startsWith('Iroha')) bb(event0)
   }
 })
 
