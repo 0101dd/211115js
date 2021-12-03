@@ -33,24 +33,28 @@
 
 &emsp; <img src="./pic/flex-ex.jpg" height="300px"> <img src="./pic/flex-2.jpg" height="300px"> <img src="./pic/flex-3.jpg" height="300px">  
 **:pushpin: 輸入「!live」回傳正在直播的影片網址**  
+&emsp;  › 隨機回傳正在直播的影片網址
 &emsp;  › 包含頻道名和連結網址  
 &emsp;  › 最多回傳5筆資料  
 
-&emsp; <img src="./pic/live0.jpg" height="300px"> <img src="./pic/live-2.jpg" height="300px"> <img src="./pic/live-3.jpg" height="300px">  
+&emsp; <img src="./pic/live0.jpg" height="300px"> <img src="./pic/live.jpg" height="300px">  
 **:pushpin: 輸入「!past」past回傳ended直播影片網址**  
+&emsp;  › 隨機回傳過去的直播影片網址
 &emsp;  › 包含頻道名和連結網址  
 &emsp;  › 最多回傳5筆資料  
 
-&emsp; <img src="./pic/past0.jpg" height="300px"> <img src="./pic/past1.jpg" height="300px">  
+&emsp; <img src="./pic/past0.jpg" height="300px"> <img src="./pic/past.jpg" height="300px">  
 **:pushpin: 輸入正在直播的頻道名字回覆直播的標題、開始時間跟同接人數**  
 &emsp;  › title後有空格，名字的第一個字母爲大寫  
 
 &emsp; <img src="./pic/title.jpg" height="300px">  
 **:pushpin: 輸入！upcoming回傳即將直播的影片網址**  
+&emsp;  › 隨機回傳即將直播的影片網址  
+&emsp;  › 不會回傳包含 free chat 和 schedule 標題的待機室網址
 &emsp;  › 包含頻道名、開始時間、直播標題和連結網址  
 &emsp;  › 最多回傳5筆資料  
 
-&emsp; <img src="./pic/up1.jpg" height="300px"> <img src="./pic/up2.jpg" height="300px">  
+&emsp; <img src="./pic/upcoming.jpg" height="500px">  
 **:pushpin: 特別按鈕**  
 &emsp;  › 直接連結到YouTube網址  
 
