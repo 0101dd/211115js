@@ -50,7 +50,7 @@
 &emsp; <img src="./pic/title.jpg" height="300px">  
 **:pushpin: 輸入！upcoming回傳即將直播的影片網址**  
 &emsp;  › 隨機回傳即將直播的影片網址  
-&emsp;  › 不會回傳包含 free chat 和 schedule 標題的待機室網址
+&emsp;  › 不會回傳包含 free chat 和 schedule 標題的待機室網址  
 &emsp;  › 包含頻道名、開始時間、直播標題和連結網址  
 &emsp;  › 最多回傳5筆資料  
 
