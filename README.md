@@ -33,13 +33,13 @@
 
 &emsp; <img src="./pic/flex-ex.jpg" height="300px"> <img src="./pic/flex-2.jpg" height="300px"> <img src="./pic/flex-3.jpg" height="300px">  
 **:pushpin: 輸入「!live」回傳正在直播的影片網址**  
-&emsp;  › 隨機回傳正在直播的影片網址
+&emsp;  › 隨機回傳正在直播的影片網址  
 &emsp;  › 包含頻道名和連結網址  
 &emsp;  › 最多回傳5筆資料  
 
 &emsp; <img src="./pic/live0.jpg" height="300px"> <img src="./pic/live.jpg" height="300px">  
 **:pushpin: 輸入「!past」past回傳ended直播影片網址**  
-&emsp;  › 隨機回傳過去的直播影片網址
+&emsp;  › 隨機回傳過去的直播影片網址  
 &emsp;  › 包含頻道名和連結網址  
 &emsp;  › 最多回傳5筆資料  
 
